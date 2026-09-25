@@ -4,13 +4,13 @@ public class Ej6 {
 	
 	public void show () {
 		
-		 char emoji = '❤';
-	     char decimal = 10084;
-         char hexadecimal = 0x2764;
+		 char character = '❤';
+	     character = 10084;
+          character = 0x2764;
 
-	     System.out.println(emoji);
-	     System.out.println(decimal);
-	     System.out.println(hexadecimal);
+	     System.out.println(character);
+	     System.out.println(character);
+	     System.out.println(character);
 		
 	}
 	

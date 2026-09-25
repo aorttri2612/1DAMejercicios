@@ -3,31 +3,30 @@ package expresiones;
 public class Ej1 {
 	
 	public void show() {
-		final int a = 3, b = 5, c= 4, d = 2, e = 7,f = 8,  g = 6;
-		int result1, final1,result2 ,result22, final2, result3, result33,result4;
+		final int a = 3, b = 5, c = 4, d = 2, e = 7, f = 8, g = 6;
+
+		int final1, final2;
 		boolean final3, final4, final5;
-		
-		//1 3*5-4/2
-		result1 = a * b ;
-		final1 = result1 - c/d;
+
+		// 1. 3 * 5 - 4 / 2
+		final1 = a * b - c / d;
 		System.out.println(final1);
-		//2 7-4*2-5*2
-		result2 = c * d;
-		result22 = b * d;
-		final2 = e - result2 - result22;
+
+		// 2. 7 - 4 * 2 - 5 * 2
+		final2 = e - c * d - b * d;
 		System.out.println(final2);
-		//3 5 + 4 < 7 + 8
-		result3 = b + c;
-		result33 = e + f;
-		final3 = result3 < result33;
-	    System.out.println(final3);
-	    //4 < 5 * 4 / 2 – 7
-	    result4 = b*c/d - e;
-	    final4 = c < result4;
-	    System.out.println(final4);
-	    //! (4 > 6)
-	    final5 = !(c > g);
-	    System.out.println(final5);
+
+		// 3. 5 + 4 < 7 + 8
+		final3 = b + c < e + f;
+		System.out.println(final3);
+
+		// 4. 4 < 5 * 4 / 2 - 7
+		final4 = a < b * c / d - e;
+		System.out.println(final4);
+
+		// 5. !(4 > 6)
+		final5 = !(c > g);
+		System.out.println(final5);
 	}
 
 	public static void main(String[] args) {

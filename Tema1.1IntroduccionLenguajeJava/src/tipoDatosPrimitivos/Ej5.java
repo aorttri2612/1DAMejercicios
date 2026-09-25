@@ -3,13 +3,15 @@ package tipoDatosPrimitivos;
 public class Ej5 {
 	public void show () {
 		
-		 char literal = 'P';
-	     char unicode = 80;
-         char escape = '\u0050';
+		char character = 'P';
 
-	     System.out.println(literal);
-	     System.out.println(unicode);
-	     System.out.println(escape);
+		character = 80;
+
+		character = '\u0050';
+
+	     System.out.println(character);
+	     System.out.println(character);
+	     System.out.println(character);
 		
 	}
 	public static void main(String[] args) {
