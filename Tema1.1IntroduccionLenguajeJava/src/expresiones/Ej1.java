@@ -3,10 +3,8 @@ package expresiones;
 public class Ej1 {
 	
 	public void show() {
-		final int a = 3, b = 5, c= 4, d = 2, result1, final1;
-		final int e = 7 ,result2 ,result22, final2;
-		final int f = 8, result3, result33;
-		final int result4, g = 6;
+		final int a = 3, b = 5, c= 4, d = 2, e = 7,f = 8,  g = 6;
+		int result1, final1,result2 ,result22, final2, result3, result33,result4;
 		boolean final3, final4, final5;
 		
 		//1 3*5-4/2
