@@ -1,6 +1,6 @@
 package tipoDatosPrimitivos;
 
-public class Ej1 {
+public class Ejercicio1 {
 	
 	public void show () {
 		 int num1 = 40000;
@@ -15,7 +15,7 @@ public class Ej1 {
 	}
 
 	public static void main(String[] args) {
-		new Ej1().show();
+		new Ejercicio1().show();
 
 	}
 

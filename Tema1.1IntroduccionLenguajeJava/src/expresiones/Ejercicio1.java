@@ -1,6 +1,6 @@
 package expresiones;
 
-public class Ej1 {
+public class Ejercicio1 {
 	
 	public void show() {
 		final int a = 3, b = 5, c = 4, d = 2, e = 7, f = 8, g = 6;
@@ -30,7 +30,7 @@ public class Ej1 {
 	}
 
 	public static void main(String[] args) {
-		new Ej1().show();
+		new Ejercicio1().show();
 
 	}
 }

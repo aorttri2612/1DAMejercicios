@@ -1,6 +1,6 @@
 package tipoDatosPrimitivos;
 
-public class Ej3 {
+public class Ejercicio3 {
 	
 	public void show () {
 		float f = 9.87f;
@@ -10,7 +10,7 @@ public class Ej3 {
 		System.out.println(i); // int can't take decimal values
 	}
 	public static void main(String[] args) {
-		new Ej3().show();
+		new Ejercicio3().show();
 
 	}
 }

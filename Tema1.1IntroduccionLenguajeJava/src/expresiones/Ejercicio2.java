@@ -1,6 +1,6 @@
 package expresiones;
 
-public class Ej2 {
+public class Ejercicio2 {
 	
 	public void show() {
 		boolean a = true, b= false, c= true;
@@ -21,7 +21,7 @@ public class Ej2 {
 	}
 
 	public static void main(String[] args) {
-		new Ej2().show();
+		new Ejercicio2().show();
 
 	}
 

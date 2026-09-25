@@ -1,6 +1,6 @@
 package tipoDatosPrimitivos;
 
-public class Ej5 {
+public class Ejercicio5 {
 	public void show () {
 		
 		char character = 'P';
@@ -15,6 +15,6 @@ public class Ej5 {
 		
 	}
 	public static void main(String[] args) {
-		new Ej5().show();
+		new Ejercicio5().show();
 	}
 }
