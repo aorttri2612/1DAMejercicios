@@ -6,7 +6,7 @@ public class Ejercicio4 {
 	public void show() {
 		
 		 // Variable declarations
-		  boolean z;
+		    boolean z;
 	        boolean condition = false;
 
 	        int a = 5;
