@@ -14,7 +14,7 @@ public class Ejercicio4 {
 	        int x;
 	        int i;
 	        int j = 5;
-	        int precio = 100;
+	        double precio = 100;
 
 	        char c = 'A';
 	        char d;
@@ -37,14 +37,14 @@ public class Ejercicio4 {
 	        // 3. NOT VALID
 	        // 'x' = 'y';
 	        // A literal cannot be assigned a value.
-	        // The left side of = must be a variable.
+	        // The left side of = must be a variable char or numerical.
 
 
 	        // 4. VALID
 	        x = 'y';
 	        System.out.printf("4. x = %c (Código int: %d)%n", (char) x, x);
 	        // 'y' is a char, but it can be automatically converted to int.
-	        // The Unicode value of 'y' is 121. Se fuerza (char) para imprimir 'y' y no solo 121.
+	        // The Unicode value of 'y' is 121. it forces (char) to print 'y' and not only 121.
 
 
 	        // 5. VALID
@@ -54,10 +54,13 @@ public class Ejercicio4 {
 
 
 	        // 6. VALID, but integer division
-	        precio = precio - precio * (30 / 100);
-	        System.out.printf("6. precio = %d%n", precio);
+	     
+	        precio = precio - precio * (30.0 / 100);
+
+	        System.out.printf("6. precio = %.2f%n", precio);
 	        // 30 / 100 is integer division, so the result is 0.
-	        // Therefore, the price does not decrease.
+	        // Therefore, the price does not decrease. Now it's 
+	        // corrected with a double and the number with the coma.
 
 
 	        // 7. VALID
