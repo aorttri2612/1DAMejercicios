@@ -8,6 +8,7 @@ public class Ejercicio4 {
 		 // Variable declarations
 		    boolean z;
 	        boolean condition = false;
+	        String s;
 
 	        int a = 5;
 	        int b = 10;
@@ -107,11 +108,10 @@ public class Ejercicio4 {
 	        // c contains the character 'c'.
 
 
-	        // 14. NOT VALID
-	        // s = ”'”;
-	        // These are typographic quotation marks and are not valid Java syntax.
-	        // Also, s has not been declared.
-
+	        // 14. VALID
+	         s = "'";
+	        System.out.printf("12. s = %s%n", s);
+	        
 
 	        // 15. NOT VALID
 	        // s = ”””;
