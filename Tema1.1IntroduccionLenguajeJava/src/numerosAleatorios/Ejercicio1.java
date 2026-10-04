@@ -19,7 +19,7 @@ public class Ejercicio1 {
 
 		 // 1. Generate a random boolean for a coin
 		 coin = random.nextBoolean();
-		 System.out.printf("1. Coin = %b%n", coin);
+		 System.out.printf("1. Coinface = %b%n", coin);
 
 		 // 2. Generate a random number between 1 and 6
 		 dice = random.nextInt(6) + 1;
