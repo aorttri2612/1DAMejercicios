@@ -16,12 +16,12 @@ public class Ejercicio1 {
 	}
 	
 	public int calculate(int a, int b, boolean add) {
-		// if (add) { //no hemos dado esta forma de hacerlo
+		// if (add) { //we didn't do in class in this way
 	      //      return a + b;
 	        //} else {
 	          //  return a - b;
 	        //}
-		return add ? a + b : a - b; //otra forma de hacerlo sin if , else
+		return add ? a + b : a - b; //another form to do it instead if , else
 	}
 
 	public static void main(String[] args) {
