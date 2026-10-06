@@ -11,7 +11,6 @@ public class Ejercicio1 {
 		 double decimal;
 		 int day;
 		 int month;
-		 int weekDay;
 		 int yearMonth;
 		 
 		 Random random = new Random();
