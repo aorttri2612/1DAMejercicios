@@ -1,9 +1,6 @@
 package metodosDeString;
 
 public class Ejercicio1 {
-	public void show() {
-		
-	}
 
 	public void show() {
 
