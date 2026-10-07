@@ -11,50 +11,50 @@ public class Ejercicio1 {
 
 		// 1. Nombre
 		System.out.print("Introduce tu nombre: ");
-		String nombre = sc.nextLine();
+		String name = sc.nextLine();
 
 		// 2. Apellidos
 		System.out.print("Introduce tus apellidos: ");
-		String apellidos = sc.nextLine();
+		String surname = sc.nextLine();
 
 		// 3. Edad
 		System.out.print("Introduce tu edad: ");
-		int edad = sc.nextInt();
+		int age = sc.nextInt();
 		sc.nextLine();
 
 		// 4. Dirección
 		System.out.print("Introduce la calle: ");
-		String calle = sc.nextLine();
+		String street = sc.nextLine();
 
 		System.out.print("Introduce el número: ");
-		int numero = sc.nextInt();
+		int num = sc.nextInt();
 
 		System.out.print("Introduce el código postal: ");
-		int codigoPostal = sc.nextInt();
+		int PostalCode = sc.nextInt();
 		sc.nextLine();
 
 		System.out.print("Introduce la provincia: ");
-		String provincia = sc.nextLine();
+		String province = sc.nextLine();
 
 		// 5. Estudiante
 		System.out.print("¿Eres estudiante? (true/false): ");
-		boolean estudiante = sc.nextBoolean();
+		boolean student = sc.nextBoolean();
 
 		// 6. Altura
 		System.out.print("Introduce tu altura en metros: ");
-		double altura = sc.nextDouble();
+		double height = sc.nextDouble();
 
 		// Mostrar los datos
 		System.out.println("\n--- DATOS INTRODUCIDOS ---");
-		System.out.printf("Nombre: %s%n", nombre);
-		System.out.printf("Apellidos: %s%n", apellidos);
-		System.out.printf("Edad: %d años%n", edad);
-		System.out.printf("Calle: %s%n", calle);
-		System.out.printf("Número: %d%n", numero);
-		System.out.printf("Código postal: %d%n", codigoPostal);
-		System.out.printf("Provincia: %s%n", provincia);
-		System.out.printf("Estudiante: %b%n", estudiante);
-		System.out.printf("Altura: %.2f metros%n", altura);
+		System.out.printf("Nombre: %s%n", name);
+		System.out.printf("Apellidos: %s%n", surname);
+		System.out.printf("Edad: %d años%n", age);
+		System.out.printf("Calle: %s%n", street);
+		System.out.printf("Número: %d%n", num);
+		System.out.printf("Código postal: %d%n", PostalCode);
+		System.out.printf("Provincia: %s%n", province);
+		System.out.printf("Estudiante: %b%n", student);
+		System.out.printf("Altura: %.2f metros%n", height);
 
 	}
 }
