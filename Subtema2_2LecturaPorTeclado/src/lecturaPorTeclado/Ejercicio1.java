@@ -3,9 +3,8 @@ package lecturaPorTeclado;
 import java.util.Scanner;
 
 public class Ejercicio1 {
-
-	public static void main(String[] args) {
-
+	
+	public void show() {
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 
@@ -55,6 +54,12 @@ public class Ejercicio1 {
 		System.out.printf("Provincia: %s%n", province);
 		System.out.printf("Estudiante: %b%n", student);
 		System.out.printf("Altura: %.2f metros%n", height);
+
+	}
+
+	public static void main(String[] args) {
+
+		new Ejercicio1().show();
 
 	}
 }
