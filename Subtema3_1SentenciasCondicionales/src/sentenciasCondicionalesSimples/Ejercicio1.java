@@ -12,7 +12,7 @@ public class Ejercicio1 {
 		
 		if(decimal > 1000) {
 			result = decimal * 0.15;
-			System.out.printf("El 15% de este número es: %%.2f", result);
+			System.out.printf("El 15% de este número es: %.2f", result);
 		}
 	}
 
