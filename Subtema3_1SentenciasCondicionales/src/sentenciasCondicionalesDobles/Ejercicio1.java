@@ -1,8 +1,8 @@
-package sentenciasCondicionalesSimples;
+package sentenciasCondicionalesDobles;
 
 import java.util.Scanner;
 
-public class Ejercicio2 {
+public class Ejercicio1 {
 	public void show () {
 		@SuppressWarnings("resource")
 		Scanner keyboard = new Scanner(System.in);
@@ -19,7 +19,7 @@ public class Ejercicio2 {
 	}
 
 	public static void main(String[] args) {
-		new Ejercicio2().show();
+		new Ejercicio1().show();
 
 	}
 
