@@ -3,15 +3,15 @@ package sentenciasCondicionalesMultiples;
 import java.util.Random;
 
 public class Ejercicio4 {
+	 String suitName, cardName;
+     int suit, card;
 	
 	 public void show() {
 	        Random random = new Random();
 
-	        int suit = random.nextInt(4);
-	        int card = random.nextInt(13);
+	        suit = random.nextInt(4);
+	        card = random.nextInt(13);
 
-	        String suitName;
-	        String cardName;
 
 	        switch (suit) {
 	            case 0 -> suitName = "♠";

@@ -3,6 +3,7 @@ package sentenciasCondicionalesMultiples;
 import java.util.Scanner;
 
 public class Ejercicio3 {
+	int num1,  num2,  num3;
 	
 	 public String ordenar(int num1, int num2, int num3) {
 	        int aux;
@@ -33,13 +34,13 @@ public class Ejercicio3 {
 			Scanner sc = new Scanner(System.in);
 
 	        System.out.printf("Introduce el primer número: ");
-	        int num1 = sc.nextInt();
+	        num1 = sc.nextInt();
 
 	        System.out.printf("Introduce el segundo número: ");
-	        int num2 = sc.nextInt();
+	        num2 = sc.nextInt();
 
 	        System.out.printf("Introduce el tercer número: ");
-	        int num3 = sc.nextInt();
+	        num3 = sc.nextInt();
 
 	        System.out.printf("Orden ascendente: %s%n", ordenar(num1, num2, num3));
 
