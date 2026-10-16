@@ -25,7 +25,7 @@ public class Ejercicio3 {
 	            num3 = aux;
 	        }
 
-	        return num1 + ", " + num2 + ", " + num3;
+	        return String.format("%d, %d, %d",num1, num2, num3);
 	    }
 
 	    public void show() {
@@ -47,6 +47,7 @@ public class Ejercicio3 {
 
 
 	public static void main(String[] args) {
+		new Ejercicio3().show();
 
 	}
 
