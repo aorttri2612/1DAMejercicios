@@ -1,4 +1,4 @@
-package sebtenciasCondicionalesMultiples;
+package sentenciasCondicionalesMultiples;
 
 import java.util.Random;
 
