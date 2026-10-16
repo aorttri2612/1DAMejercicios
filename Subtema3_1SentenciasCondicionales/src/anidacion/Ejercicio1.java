@@ -4,20 +4,20 @@ import java.util.Scanner;
 
 public class Ejercicio1 {
 	
+	@SuppressWarnings("resource")
 	public void show() {
 		int num;
-		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 
-        System.out.printf("Introduce un número entero: ");
-         num = sc.nextInt();
+        System.out.println("Introduce un número entero: ");
+        num = sc.nextInt();
 
         if (num > 0) {
-            System.out.printf("El número es positivo.%n", num);
+            System.out.println("El número es positivo.");
         } else if (num < 0) {
-            System.out.printf("El número es negativo.%n", num);
+            System.out.println("El número es negativo.");
         } else {
-            System.out.printf("El número es cero.%n", num);
+            System.out.println("El número es cero.");
         }
 		
 	}
