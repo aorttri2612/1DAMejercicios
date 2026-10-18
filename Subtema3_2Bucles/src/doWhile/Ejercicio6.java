@@ -5,56 +5,49 @@ import java.util.Scanner;
 @SuppressWarnings("resource")
 public class Ejercicio6 {
 
-    double grade, passedSum = 0, failedSum = 0;
-    double passedAverage, failedAverage;
-    int iteration = 0, passedCount = 0, failedCount = 0;
-    Scanner scanner = new Scanner(System.in);
+	double grade, passedSum = 0, failedSum = 0;
+	int passed = 0, failed = 0;
+	Scanner scanner = new Scanner(System.in);
 
-    public void calculate() {
+	public void grades1To10() {
 
-        do {
-            System.out.printf("Enter a grade: ");
-            grade = scanner.nextDouble();
+		do {
+			System.out.println("Enter a grade between 1 and 10: ");
+			grade = scanner.nextDouble();
 
-            if (grade >= 0 && grade <= 10) {
-                iteration++;
+			if (grade >= 5 && grade <= 10) {
+				passed++;
+				passedSum += grade;
+			} else if (grade >= 1 && grade < 5) {
+				failed++;
+				failedSum += grade;
+			}
 
-                if (grade >= 5) {
-                    passedSum += grade;
-                    passedCount++;
-                } else {
-                    failedSum += grade;
-                    failedCount++;
-                }
-            }
+		} while (grade >= 1 && grade <= 10);
 
-        } while (grade != -1);
+		System.out.println("Grade out of range. Program finished");
+		System.out.printf("Passed: %d%n", passed);
+		System.out.printf("Failed: %d%n", failed);
 
-        if (passedCount > 0) {
-            passedAverage = passedSum / passedCount;
-            System.out.printf("Passed students: %d%n", passedCount);
-            System.out.printf("Average of passed grades: %.2f%n", passedAverage);
-        } else {
-            System.out.printf("There are no passed students.%n");
-        }
+		if (passed > 0) {
+			System.out.printf("Average of passed grades: %.2f%n", passedSum / passed);
+		} else {
+			System.out.println("There are no passed grades");
+		}
 
-        if (failedCount > 0) {
-            failedAverage = failedSum / failedCount;
-            System.out.printf("Failed students: %d%n", failedCount);
-            System.out.printf("Average of failed grades: %.2f%n", failedAverage);
-        } else {
-            System.out.printf("There are no failed students.%n");
-        }
+		if (failed > 0) {
+			System.out.printf("Average of failed grades: %.2f%n", failedSum / failed);
+		} else {
+			System.out.println("There are no failed grades");
+		}
 
-        System.out.printf("Total valid grades: %d%n", iteration);
-        scanner.close();
-    }
+	}
 
-    public void show() {
-        calculate();
-    }
+	public void show() {
+		grades1To10();
+	}
 
-    public static void main(String[] args) {
-        new Ejercicio6().show();
-    }
+	public static void main(String[] args) {
+		new Ejercicio6().show();
+	}
 }
