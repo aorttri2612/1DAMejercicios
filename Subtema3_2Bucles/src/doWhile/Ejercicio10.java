@@ -2,13 +2,13 @@ package doWhile;
 
 import java.util.Scanner;
 
-@SuppressWarnings("resource")
 public class Ejercicio10 {
-
-	int originalNumber, number, sum = 0;
-	Scanner scanner = new Scanner(System.in);
-
+	
+	@SuppressWarnings("resource")
 	public void sumDigits() {
+		
+		int originalNumber, number, sum = 0;
+		Scanner scanner = new Scanner(System.in);
 
 		System.out.println("Enter an integer: ");
 		originalNumber = scanner.nextInt();

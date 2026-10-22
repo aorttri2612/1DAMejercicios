@@ -3,15 +3,16 @@ package bucleWhile;
 import java.util.Random;
 
 public class Ejercicio1 {
-	int num;
-	Random random = new Random();
 	
 	public void generateAleatoryNumber() {
+		//VARIABLES LOCALES
+		int num; 
+		Random random = new Random();
 		
-		num = random.nextInt(1000) + 1;
+		num = random.nextInt(1, 1001);
 		while(num % 9 != 0) {
 			 System.out.printf("%d%n", num);
-			 num = random.nextInt(1000) + 1;
+			 num = random.nextInt(1, 1001);
 		}
 		
 	}

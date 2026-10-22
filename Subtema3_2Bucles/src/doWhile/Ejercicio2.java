@@ -3,13 +3,12 @@ package doWhile;
 import java.util.Random;
 
 public class Ejercicio2 {
-	 int num;
-	    int attempts;
-	    Random random = new Random();
+	
 
 	    public void generateAleatoryNumberWith7Attempts() {
-	        attempts = 0;
-	        num = 0;
+	    	int num = 0;
+	 	    int attempts = 0;
+	 	    Random random = new Random();
 
 	        do {
 	            num = random.nextInt(100) + 1;

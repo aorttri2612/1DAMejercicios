@@ -2,14 +2,13 @@ package doWhile;
 
 import java.util.Scanner;
 
-@SuppressWarnings("resource")
 public class Ejercicio8 {
 
-	int option;
-	double number1, number2;
-	Scanner scanner = new Scanner(System.in);
-
+	@SuppressWarnings("resource")
 	public void menuAndCalculator() {
+		int option;
+		double number1, number2;
+		Scanner scanner = new Scanner(System.in);
 
 		do {
 			System.out.println("1. Add 2. Subtract 3. Exit");

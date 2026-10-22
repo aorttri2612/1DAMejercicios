@@ -2,12 +2,11 @@ package doWhile;
 
 import java.util.Scanner;
 
-@SuppressWarnings("resource")
 public class Ejercicio3 {
-	double grade;
-	Scanner scanner = new Scanner(System.in);
-	
+	@SuppressWarnings("resource")
 	public void enterGrades() {
+		double grade;
+		Scanner scanner = new Scanner(System.in);
 	    
         do {
             System.out.printf("Enter a grade between 0 and 10: ");

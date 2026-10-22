@@ -2,14 +2,14 @@ package doWhile;
 
 import java.util.Scanner;
 
-@SuppressWarnings("resource")
 public class Ejercicio7 {
-
-	final int CORRECT_PIN = 1234, MAX_ATTEMPTS = 3;
-	int enteredPin, attempts = 0;
-	Scanner scanner = new Scanner(System.in);
-
+	
+	@SuppressWarnings("resource")
 	public void checkPin() {
+		
+		final int CORRECT_PIN = 1234, MAX_ATTEMPTS = 3;
+		int enteredPin, attempts = 0;
+		Scanner scanner = new Scanner(System.in);
 
 		do {
 			System.out.println("Enter your PIN: ");

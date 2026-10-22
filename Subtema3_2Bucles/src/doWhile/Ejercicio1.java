@@ -3,20 +3,20 @@ package doWhile;
 import java.util.Random;
 
 public class Ejercicio1 {
-	  int num;
-	    Random random = new Random();
 
 	    public void generateAleatoryNumber() {
-
-	        num = random.nextInt(1000) + 1;
-
-	        while (num % 9 != 0) {
-	            System.out.printf("%d%n", num);
-	            num = random.nextInt(1000) + 1;
-	        }
-
-	        System.out.printf("%d%n", num);
-	    }
+	    	Random r = new Random();
+			
+			int num;
+			
+			final int DIVISIBLE = 9;
+			final int MAX = 1000;
+			
+			do {
+				num = r.nextInt(1, MAX + 1);
+				System.out.println(num);
+			} while(num % DIVISIBLE != 0);
+		}
 
 		public void show() {
 			generateAleatoryNumber();

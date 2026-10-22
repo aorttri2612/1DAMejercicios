@@ -3,14 +3,14 @@ package doWhile;
 import java.util.Random;
 import java.util.Scanner;
 
-@SuppressWarnings("resource")
 public class Ejercicio9 {
-
-	int secretNumber, guess, attempts = 0;
-	Random random = new Random();
-	Scanner scanner = new Scanner(System.in);
-
+	@SuppressWarnings("resource")
 	public void guessNumber() {
+		
+		int secretNumber, guess, attempts = 0;
+		Random random = new Random();
+		Scanner scanner = new Scanner(System.in);
+
 
 		secretNumber = random.nextInt(100) + 1;
 

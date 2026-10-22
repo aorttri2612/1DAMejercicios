@@ -3,13 +3,12 @@ package doWhile;
 import java.util.Scanner;
 
 public class Ejercicio4 {
-	
-	  double grade;
-      int iteration = 0;
-      
+	  
 	 @SuppressWarnings("resource")
 	    public void show() {
 	        Scanner scanner = new Scanner(System.in);
+	        double grade;
+	        int iteration = 0;
 
 	        do {
 	            System.out.println("Enter a grade between 0 and 10: ");
