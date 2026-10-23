@@ -11,6 +11,7 @@ public class Ejercicio8 {
 		Scanner scanner = new Scanner(System.in);
 
 		do {
+			System.out.println("Menú");
 			System.out.println("1. Add 2. Subtract 3. Exit");
 			System.out.println("Choose an option: ");
 			option = scanner.nextInt();
