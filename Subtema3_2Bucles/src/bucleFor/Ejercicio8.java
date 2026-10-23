@@ -4,27 +4,28 @@ import java.util.Scanner;
 
 public class Ejercicio8 {
 
-	@SuppressWarnings("resource")
-	public void drawLines() {
-		int n, line, space, asterisk;
-		Scanner scanner = new Scanner(System.in);
-		System.out.printf("Enter the number of asterisks: ");
-		n = scanner.nextInt();
+
+	public void drawPiramid(int n) {
+		int line, space, asterisk;
+		
 		for (line = 1; line <= n; line++) {
-			for (space = 1; space <= n - line; space++) {
+			for (space = 1; space <= n-line; space++) {
 				System.out.printf(" ");
 			}
-			System.out.printf("*");
-			for (asterisk = 2; asterisk <= line; asterisk++) {
-				System.out.printf(" *");
+			for (asterisk = 1; asterisk <= line; asterisk++) {
+				System.out.printf("* ");
 			}
-			System.out.printf("%n");
+			System.out.println();
 		}
 	
 	}
 
+	@SuppressWarnings("resource")
 	public void show() {
-		drawLines();
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the number of asterisks: ");
+		int n = scanner.nextInt();
+		drawPiramid(n);
 	}
 
 	public static void main(String[] args) {
