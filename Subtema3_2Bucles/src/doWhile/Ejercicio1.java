@@ -5,7 +5,7 @@ import java.util.Random;
 public class Ejercicio1 {
 
 	    public void generateAleatoryNumber() {
-	    	Random r = new Random();
+	    	Random random = new Random();
 			
 			int num;
 			
@@ -13,7 +13,7 @@ public class Ejercicio1 {
 			final int MAX = 1000;
 			
 			do {
-				num = r.nextInt(1, MAX + 1);
+				num = random.nextInt(1, MAX + 1);
 				System.out.println(num);
 			} while(num % DIVISIBLE != 0);
 		}

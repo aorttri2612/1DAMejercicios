@@ -9,11 +9,11 @@ public class Ejercicio3 {
 		Scanner scanner = new Scanner(System.in);
 	    
         do {
-            System.out.printf("Enter a grade between 0 and 10: ");
+            System.out.println("Enter a grade between 0 and 10: ");
             grade = scanner.nextDouble();
         } while (grade >= 0 && grade <= 10);
 
-        System.out.printf("Invalid grade. Program finished.%n");
+        System.out.println("Invalid grade. Program finished: ");
     }
 	
 	public void show() {
