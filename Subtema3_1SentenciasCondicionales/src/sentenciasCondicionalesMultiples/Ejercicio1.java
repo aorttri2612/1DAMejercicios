@@ -8,19 +8,19 @@ public class Ejercicio1 {
 	public void gradesAnidation() {
 		
 		if( grade > 0 && grade <= 2) {
-			System.out.println("Muy deficiente");	
+			System.out.println("f");	
 		}else if(grade >= 3 && grade <= 4) {
-			System.out.println("Insuficiente");
+			System.out.println("e");
 		}else if(grade == 5) {
-			System.out.println("Suficiente");
+			System.out.println("d");
 		}else if(grade == 6) {
-			System.out.println("Bien");
+			System.out.println("c");
 		}else if(grade >= 7 && grade <=8) {
-			System.out.println("Notable");
+			System.out.println("b");
 		}else if(grade >=9 && grade <=10) {
-			System.out.println("Sobresaliente");
+			System.out.println("a");
 		} else if(grade < 0){
-			System.out.println("Nota no válida.");
+			System.out.println("no valid grade");
 		}
 		
 	}

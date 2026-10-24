@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ejercicio3 {
 	int num1,  num2,  num3;
 	
-	 public String ordenar(int num1, int num2, int num3) {
+	 public String order(int num1, int num2, int num3) {
 	        int aux;
 
 	        if (num1 > num2) {
@@ -42,7 +42,7 @@ public class Ejercicio3 {
 	        System.out.printf("Introduce el tercer número: ");
 	        num3 = sc.nextInt();
 
-	        System.out.printf("Orden ascendente: %s%n", ordenar(num1, num2, num3));
+	        System.out.printf("Orden ascendente: %s%n", order(num1, num2, num3));
 
 	    }
 
