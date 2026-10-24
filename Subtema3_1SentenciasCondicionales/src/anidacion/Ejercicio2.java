@@ -3,35 +3,35 @@ package anidacion;
 import java.util.Scanner;
 
 public class Ejercicio2 {
-	double temperatura;
+	double temperature;
 	
-	 public String comprobarTemperatura(double temperatura) {
+	 public String SawTemperature(double temp) {
 
-			    int tipo;
+			    int type;
 
-			    if (temperatura < 0) {
-			        tipo = 1;
-			    } else if (temperatura < 15) {
-			        tipo = 2;
-			    } else if (temperatura < 25) {
-			        tipo = 3;
-			    } else if (temperatura < 35) {
-			        tipo = 4;
+			    if (temp < 0) {
+			        type = 1;
+			    } else if (temp < 15) {
+			        type = 2;
+			    } else if (temp < 25) {
+			        type = 3;
+			    } else if (temp < 35) {
+			        type = 4;
 			    } else {
-			        tipo = 5;
+			        type = 5;
 			    }
 
-			    switch (tipo) {
+			    switch (type) {
 			        case 1:
-			            return "Hace mucho frío";
+			            return "freezing";
 			        case 2:
-			            return "Hace frío";
+			            return "cold";
 			        case 3:
-			            return "Temperatura agradable";
+			            return "good temperature";
 			        case 4:
-			            return "Hace calor";
+			            return "hot";
 			        default:
-			            return "Hace mucho calor";
+			            return "boiling hot";
 			    }
 	 }
 
@@ -39,10 +39,10 @@ public class Ejercicio2 {
 	        @SuppressWarnings("resource")
 			Scanner sc = new Scanner(System.in);
 
-	        System.out.printf("Introduce la temperatura: ");
-	         temperatura = sc.nextDouble();
+	        System.out.printf("Enter the temperature: ");
+	         temperature = sc.nextDouble();
 
-	        System.out.printf("%s%n", comprobarTemperatura(temperatura));
+	        System.out.printf("%s%n", SawTemperature(temperature));
 
 	        
 	    }
