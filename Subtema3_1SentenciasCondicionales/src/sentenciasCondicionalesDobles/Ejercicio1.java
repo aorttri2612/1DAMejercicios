@@ -12,9 +12,9 @@ public class Ejercicio1 {
 		
 		if(num % 2 == 0) {
 			
-			System.out.printf("The number %d es par", num);
+			System.out.printf("The number %d es even", num);
 		} else {
-			System.out.printf("The number %d is not even", num);
+			System.out.printf("The number %d is odd", num);
 		}
 	}
 

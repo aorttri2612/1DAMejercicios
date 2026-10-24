@@ -9,20 +9,20 @@ public class Ejercicio3 {
 				Scanner sc = new Scanner(System.in);
 
 		        System.out.printf("Introduce la distancia de ida en Km: ");
-		        double distancia = sc.nextDouble();
+		        double distance = sc.nextDouble();
 
 		        System.out.printf("Introduce los días de estancia: ");
-		        int dias = sc.nextInt();
+		        int days = sc.nextInt();
 
-		        double distanciaTotal = distancia * 2;
-		        double precio = distanciaTotal * 0.35;
+		        double totaldistance = distance * 2;
+		        double price = totaldistance * 0.35;
 
-		        if (distanciaTotal > 1000 && dias > 7) {
-		            precio = precio * 0.70;
+		        if (totaldistance > 1000 && days > 7) {
+		            price = price * 0.70;
 		        }
 
-		        System.out.printf("Distancia total: %.2f Km%n", distanciaTotal);
-		        System.out.printf("Precio del billete: %.2f €%n", precio);
+		        System.out.printf("Distancia total: %.2f Km%n", totaldistance);
+		        System.out.printf("Precio del billete: %.2f €%n", price);
 
 		    }
 
