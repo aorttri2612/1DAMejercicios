@@ -12,23 +12,23 @@ public class Ejercicio13 {
 		char letter, bishopLetter;
 		// Pedir la casilla del alfil
 		do {
-			System.out.printf("Bishop column (a-h): ");
+			System.out.println("Bishop column (a-h): ");
 			bishopLetter = Character.toLowerCase(sc.next().charAt(0));
 		} while (bishopLetter < 'a' || bishopLetter > 'h');
 
 		do {
-			System.out.printf("Bishop row (1-8): ");
+			System.out.println("Bishop row (1-8): ");
 			bishopRow = sc.nextInt();
 		} while (bishopRow < 1 || bishopRow > 8);
 
 		bishopColumn = bishopLetter - 'a' + 1;
 
 		// Cabecera con las letras
-		System.out.printf("%n  ");
+		System.out.println("%n  ");
 		for (letter = 'a'; letter <= 'h'; letter++) {
 			System.out.printf("%c ", letter);
 		}
-		System.out.printf("%n");
+		System.out.println("%n");
 
 		// Filas del 8 al 1
 		for (row = 8; row >= 1; row--) {
@@ -48,11 +48,11 @@ public class Ejercicio13 {
 		}
 
 		// Pie con las letras
-		System.out.printf("  ");
+		System.out.println("  ");
 		for (letter = 'a'; letter <= 'h'; letter++) {
 			System.out.printf("%c ", letter);
 		}
-		System.out.printf("%n");
+		System.out.println("%n");
 	}
 
 	public void show() {
