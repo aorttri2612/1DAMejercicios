@@ -1,7 +1,7 @@
 package bucleFor;
 
 import java.util.Scanner;
-
+import static bucleFor.Colors.*;
 
 public class Ejercicio13 {
 
@@ -35,13 +35,13 @@ public class Ejercicio13 {
 			System.out.printf("%d ", row);
 			for (column = 1; column <= 8; column++) {
 				if (row == bishopRow && column == bishopColumn) {
-					System.out.printf("%s  %s", Colors.BLUE_BACKGROUND, Colors.RESET); // alfil
+					System.out.printf("%s  %s", BLUE_BACKGROUND, RESET); // alfil
 				} else if (row - bishopRow == column - bishopColumn || row - bishopRow == bishopColumn - column) {
-					System.out.printf("%s  %s", Colors.RED_BACKGROUND, Colors.RESET); // diagonales
+					System.out.printf("%s  %s", RED_BACKGROUND, RESET); // diagonales
 				} else if ((row + column) % 2 == 0) {
-					System.out.printf("%s  %s", Colors.BLACK_BACKGROUND, Colors.RESET); // negro
+					System.out.printf("%s  %s", BLACK_BACKGROUND, RESET); // negro
 				} else {
-					System.out.printf("%s  %s", Colors.WHITE_BACKGROUND, Colors.RESET); // blanco
+					System.out.printf("%s  %s", WHITE_BACKGROUND, RESET); // blanco
 				}
 			}
 			System.out.printf(" %d%n", row);
