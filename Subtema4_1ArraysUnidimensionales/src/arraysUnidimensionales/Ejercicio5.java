@@ -4,15 +4,15 @@ import java.util.Arrays;
 
 public class Ejercicio5 {
 
-	int[] numbers = {1, 2, 3}, reversed;
+	int[] numbers = {1, 2, 3};
 
 	public int[] reverse(int[] numbersArray) {
 		int[] inner, result;
 		if (numbersArray.length == 0 || numbersArray.length == 1) {
-			// Casos base
+		
 			result = numbersArray;
 		} else {
-			// Caso recursivo: array.length >= 2
+			
 			inner = Arrays.copyOfRange(numbersArray, 1, numbersArray.length - 1);
 			inner = reverse(inner);
 			result = new int[numbersArray.length];
@@ -24,6 +24,7 @@ public class Ejercicio5 {
 	}
 
 	public void show() {
+		int [] reversed;
 		System.out.printf("Original array: ");
 		for (int i = 0; i < numbers.length; i++) {
 			System.out.printf("%d ", numbers[i]);
