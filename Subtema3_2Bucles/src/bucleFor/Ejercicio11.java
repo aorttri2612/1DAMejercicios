@@ -3,11 +3,11 @@ package bucleFor;
 import java.util.Scanner;
 
 public class Ejercicio11 {
-
 	int row, col, size;
 	Scanner keyboard = new Scanner(System.in);
 
 	public void drawPyramid(int n) {
+		
 		for (row = 1; row <= n; row++) {
 			for (col = 1; col <= n - row; col++) {
 				System.out.print("   ");
